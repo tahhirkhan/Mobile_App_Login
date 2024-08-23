@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-container {
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            padding: 30px;
+        }
+        .top-design {
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 120px;
+            height: 120px;
+            background-color: #fff3cd;
+            border-radius: 50%;
+        }
+        .bottom-design {
+            position: absolute;
+            bottom: -80px;
+            right: -80px;
+            width: 160px;
+            height: 160px;
+            background-color: #fff3cd;
+            border-radius: 50%;
+        }
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            border-radius: 0;
+            padding-left: 0;
+        }
+        .btn-login {
+            background-color: #ffc107;
+            border: none;
+            border-radius: 20px;
+            padding: 5px 15px;
+        }
+        .login-text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .form-label {
+            color: #6c757d;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="top-design"></div>
+        <div class="bottom-design"></div>
+        <div class="login-text">Login</div>
+        <p class="text-muted mb-4">Please sign in to continue.</p>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="email" value="user123@email.com">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">PASSWORD</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <p class="mb-0">Don't have an account? <a href="#" style="color: #ffc107;">Sign up</a></p>
+                <button type="submit" class="btn btn-login">Login →</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

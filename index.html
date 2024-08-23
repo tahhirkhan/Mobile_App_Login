@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .login-card {
+            background: #fff;
+            border-radius: 25px;
+            padding: 2rem;
+            width: 100%;
+            max-width: 360px;
+            height: 620px;
+            position: relative;
+            text-align: left;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .login-card h3 {
+            font-weight: bold;
+            /* margin-bottom: 1rem; */
+        }
+
+        .login-card p {
+            /* font-weight: bold; */
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .form-control {
+            border-radius: 12px;
+            padding-left: 40px;
+            padding-right: 100px;
+            height: 50px;
+            box-shadow: none;
+            border: 1px solid #ddd;
+        }
+
+        .input-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+
+        .forgot-password {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.9rem;
+            color: #f68b1e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-btn {
+            background-color: #f68b1e;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            color: #fff;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .login-btn i {
+            margin-left: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #e67e22;
+        }
+
+        .signup-link {
+            font-size: 0.9rem;
+            color: #f68b1e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-container {
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+
+        .bg-decor {
+            position: absolute;
+            background: linear-gradient(135deg, #f68b1e, #f9a61b);
+        }
+
+        .bg-decor-top {
+            width: 150px;
+            height: 80px;
+            top: 0px;
+            right: 0px;
+            border-radius: 0 25px 0 100px;
+            transform: rotate(0deg);
+        }
+
+        .bg-decor-bottom {
+            width: 20rem;
+            height: 18rem;
+            bottom: 0rem;
+            right: -13rem;
+            border-radius: 0 50px 50px 50px;
+            transform: rotate(-30deg);
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-decor bg-decor-bottom"></div>
+    <div class="login-card">
+        <div class="bg-decor bg-decor-top"></div>
+        
+        <div class="form-container">
+            <h3>Login</h3>
+            <p>Please sign in to continue.</p>
+            <form>
+                <div class="form-group position-relative">
+                    <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                    <input type="email" class="form-control" placeholder="EMAIL" required>
+                </div>
+                <div class="form-group position-relative">
+                    <span class="input-icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="PASSWORD" required>
+                    <a href="#" class="forgot-password">FORGOT</a>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn login-btn">
+                        LOGIN <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="signup-container">
+            <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
